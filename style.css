@@ -1,0 +1,74 @@
+body {
+  background: url('https://i.gifer.com/9U8A.gif') repeat;
+  color: #00ff00;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 50px;
+  animation: flashbg 2s infinite alternate;
+}
+
+@keyframes flashbg {
+  0% { background-color: black; }
+  50% { background-color: purple; }
+  100% { background-color: darkred; }
+}
+
+h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px 5px yellow, -2px -2px 5px red;
+  animation: clignoteText 1s infinite alternate;
+}
+
+@keyframes clignoteText {
+  0% { color: #ff00ff; }
+  100% { color: #00ffff; }
+}
+
+#insulte {
+  font-size: 2.5em;
+  margin: 30px 0;
+  min-height: 100px;
+  border: 3px dashed #ff0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px red, inset 0 0 10px yellow;
+  animation: vibrate 0.2s infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(2px, -2px); }
+  50% { transform: translate(-2px, 2px); }
+  75% { transform: translate(2px, 2px); }
+  100% { transform: translate(-2px, -2px); }
+}
+
+button {
+  background: linear-gradient(45deg, red, yellow);
+  border: 5px double lime;
+  color: blue;
+  font-size: 1.8em;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  animation: pulsate 1s infinite alternate;
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+#counter {
+  margin-top: 20px;
+  font-size: 1.5em;
+  background: hotpink;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px groove cyan;
+  box-shadow: inset 0 0 10px blue;
+  color: navy;
+  transform: rotate(-2deg);
+}
